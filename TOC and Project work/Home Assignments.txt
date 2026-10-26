@@ -1,0 +1,191 @@
+BANKING APPLICATION – HOME ASSIGNMENTS
+=====================================
+
+HOME ASSIGNMENT 1: ACCOUNT CLASS AND VALIDATION
+-----------------------------------------------
+
+Focus:
+Account Class and Validation
+
+Task:
+Create an Account class with the following attributes:
+- Account Number
+- Account Holder Name
+- Opening Balance
+
+Requirements:
+- Apply encapsulation.
+- Implement basic input validation.
+- Create at least three sample accounts.
+
+Expected Output:
+A working Java application displaying valid account details and handling invalid inputs.
+
+
+HOME ASSIGNMENT 2: BANKING OPERATIONS AND FILE HANDLING
+------------------------------------------------------
+
+Focus:
+Banking Operations and File Handling
+
+Task:
+Implement the following banking operations:
+- Deposit
+- Withdrawal
+- Balance Inquiry
+
+Requirements:
+- Handle invalid amounts.
+- Handle insufficient balance.
+- Write account details to a file.
+- Read account details from a file.
+
+Expected Output:
+A console-based banking application with basic exception handling and file handling.
+
+
+HOME ASSIGNMENT 3: COLLECTIONS AND STREAM API
+---------------------------------------------
+
+Focus:
+Collections Framework and Stream API
+
+Task:
+Create an in-memory AccountRepository to:
+- Add accounts.
+- Find accounts.
+- List all accounts.
+
+Requirements:
+- Prevent duplicate account numbers.
+- Filter accounts using the Collections Framework and Stream API.
+- Sort accounts using the Collections Framework and Stream API.
+
+Expected Output:
+An account management application with basic search and reporting functionality.
+
+
+HOME ASSIGNMENT 4: CONCURRENCY AND SOLID PRINCIPLES
+--------------------------------------------------
+
+Focus:
+Concurrency and SOLID Principles
+
+Task:
+Create a simple concurrency example using Runnable or ExecutorService.
+
+Requirements:
+- Apply the Single Responsibility Principle (SRP) to improve the banking application's structure.
+- Demonstrate one simple design pattern, such as Strategy or Factory.
+
+Expected Output:
+A basic concurrency demonstration and an improved application design.
+
+
+HOME ASSIGNMENT 5: GIT, UNIT TESTING, AND SQL
+---------------------------------------------
+
+Focus:
+Git, Unit Testing, and SQL
+
+Task:
+Create a Git feature branch and commit the changes.
+
+Requirements:
+- Write JUnit tests for deposit and withdrawal operations.
+- Write basic SQL queries to retrieve account records.
+- Write SQL queries to filter and sort account records.
+
+Expected Output:
+Git commits, passing unit tests, and SQL query results.
+
+
+HOME ASSIGNMENT 6: JDBC AND DATABASE TRANSACTIONS
+------------------------------------------------
+
+Focus:
+JDBC and Database Transactions
+
+Task:
+Implement account CRUD operations using JDBC and PreparedStatement.
+
+Requirements:
+- Implement a fund transfer between two accounts.
+- Use commit() for successful transfers.
+- Use rollback() for failed transfers.
+
+Expected Output:
+A MySQL-backed console application demonstrating account management and transaction handling.
+
+
+HOME ASSIGNMENT 7: JPA AND ENTITY RELATIONSHIPS
+-----------------------------------------------
+
+Focus:
+JPA and Entity Relationships
+
+Task:
+Create Account and Transaction entities.
+
+Requirements:
+- Implement account CRUD operations using JPA.
+- Store fund transfer history.
+- Use @Transactional to demonstrate rollback.
+
+Expected Output:
+A JPA-based application with transaction history and verified account balances.
+
+
+HOME ASSIGNMENT 8: FUND TRANSFER USING SPRING DI AND AOP
+-------------------------------------------------------
+
+Focus:
+Spring Dependency Injection, Bean Lifecycle, and AOP
+
+Task:
+Develop a simple fund transfer application using Spring.
+
+Requirements:
+- Use constructor injection to manage service dependencies.
+- Demonstrate bean lifecycle callbacks.
+- Implement AOP-based logging for fund transfer operations.
+- Create AccountService and FundTransferService.
+- Use @PostConstruct and @PreDestroy.
+- Implement a logging aspect using @Aspect and @Before or @Around.
+
+Expected Output:
+A working Spring application demonstrating constructor injection, bean lifecycle, and AOP-based logging.
+
+
+HOME ASSIGNMENT 9: DESIGN PATTERNS AND REST API DEVELOPMENT
+----------------------------------------------------------
+
+Focus:
+Design Patterns and REST API Development
+
+Task:
+Apply the Strategy Pattern to the fund transfer business logic.
+
+Requirements:
+- Create Spring Boot REST endpoints for account operations.
+- Create Spring Boot REST endpoints for transaction operations.
+- Use appropriate HTTP methods and status codes.
+- Organize business logic appropriately.
+
+Expected Output:
+A basic Spring Boot REST API with organized business logic.
+
+
+HOME ASSIGNMENT 10: REST API VALIDATION AND JWT SECURITY
+-------------------------------------------------------
+
+Focus:
+REST API Validation and JWT Security
+
+Task:
+Add request validation and centralized exception handling to the REST APIs.
+
+Requirements:
+- Secure the APIs using Spring Security and JWT.
+- Test unauthorized requests.
+- Implement basic
