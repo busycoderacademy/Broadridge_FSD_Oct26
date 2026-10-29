@@ -7,17 +7,17 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-public class AccountRepoJdbcImpl implements  AccountRepo {
+public class AccountRepoFileImpl implements  AccountRepo {
     private Map<Integer, Account> accounts;
 
-    public AccountRepoJdbcImpl() {
+    public AccountRepoFileImpl() {
         accounts = new HashMap<>();
         accounts.put(1, new Account(1, "raj", 2000));
         accounts.put(2, new Account(2, "ekta", 2000));
     }
     @Override
     public Account getAccountById(int id) {
-        System.out.println("jdbc wala implementation");
+        System.out.println("file wala implementation");
         return accounts.get(id);
     }
 

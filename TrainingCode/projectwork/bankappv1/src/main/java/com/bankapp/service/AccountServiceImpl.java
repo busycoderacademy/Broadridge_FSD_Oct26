@@ -2,8 +2,6 @@ package com.bankapp.service;
 
 import com.bankapp.dto.Account;
 import com.bankapp.repo.AccountRepo;
-import com.bankapp.repo.AccountRepoJdbcImpl;
-import com.bankapp.repo.AccountRepoMapImpl;
 
 public class AccountServiceImpl implements  AccountService {
 

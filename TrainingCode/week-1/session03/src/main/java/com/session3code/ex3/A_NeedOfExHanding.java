@@ -9,23 +9,46 @@ public class A_NeedOfExHanding {
 		//try with resouce then u dont have to close explicity i will do on behalf of u
 
 
-		//A R M=> try with resouces => Java 7 long back
-		try(Scanner scanner = new Scanner(System.in)){
-			int a;int b;
-			System.out.println("pe 2 nos");
-			a = scanner.nextInt();
-			b = scanner.nextInt();
-			int c = a / b;
-			System.out.println(c);
-			System.out.println("inside catch");
-		}catch (InputMismatchException e) {
-			System.out.println("dont enter char or something else only int are allowed");
-		} catch (ArithmeticException e) {
-			System.out.println("dont do divide by zero");
-		}catch (Exception e) {
-			System.out.println("some other ex");
-		}
+
+	try(Scanner scanner = new Scanner(System.in)){
+		int a;int b;
+		System.out.println("pe 2 nos");
+		a = scanner.nextInt();
+		b = scanner.nextInt();
+		int c = a / b;
+		System.out.println(c);
 		System.out.println("end");
+
+	}catch (InputMismatchException e) {
+		System.out.println("dont enter char or something else only int are allowed");
+	} catch (ArithmeticException e) {
+		System.out.println("dont do divide by zero");
+	} catch (Exception e) {
+		System.out.println("some other ex");
+	}
+
+
+
+
+
+
+		//A R M=> try with resouces => Java 7 long back
+//		try(Scanner scanner = new Scanner(System.in)){
+//			int a;int b;
+//			System.out.println("pe 2 nos");
+//			a = scanner.nextInt();
+//			b = scanner.nextInt();
+//			int c = a / b;
+//			System.out.println(c);
+//			System.out.println("inside catch");
+//		}catch (InputMismatchException e) {
+//			System.out.println("dont enter char or something else only int are allowed");
+//		} catch (ArithmeticException e) {
+//			System.out.println("dont do divide by zero");
+//		}catch (Exception e) {
+//			System.out.println("some other ex");
+//		}
+//		System.out.println("end");
 
 
 

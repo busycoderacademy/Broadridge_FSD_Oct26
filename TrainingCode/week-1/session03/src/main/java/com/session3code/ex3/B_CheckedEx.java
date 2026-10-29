@@ -1,29 +1,26 @@
 package com.session3code.ex3;
 //i want to read a file
-
-
-import java.io.*;
 import java.util.*;
+import java.io.*;
+
 public class B_CheckedEx {
 	public static void main(String[] args){
+		//Unique words from the file: dsa ? Set (dont allow duplicates)
 		Set<String> set = new HashSet<>();
-
-        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("data.txt")))) {
+		try(BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("data.txt")))){
 			String line=null;
-			while((line = bufferedReader.readLine()) != null) {
-				String tokens []=line.split(" ");
+			while((line=bufferedReader.readLine())!=null){
+				String tokens[]=line.split(" ");
 				for(String token:tokens) {
-					set.add(token);
+					set.add(token.toLowerCase());
 				}
 			}
-        } catch (FileNotFoundException e) {
-            System.out.println("file not found");
-        }catch(IOException e){
-			System.out.println("IO Exception");
+		}catch (IOException e){
+			System.out.println(e);
 		}
 
-		for(String word: set){
-			System.out.println(word);
+		for(String s: set){
+			System.out.println(s);
 		}
     }
 }

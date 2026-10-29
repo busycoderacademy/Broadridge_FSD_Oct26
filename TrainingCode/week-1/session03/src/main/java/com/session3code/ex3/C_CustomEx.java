@@ -1,11 +1,14 @@
 package com.session3code.ex3;
 //min balance is 5000, u can use user define excpetion
 /// u have to decide whether u want to create checked or unched ex
+///
+/// checked: u have to handle it or declare it
 class AccountCreationException extends Exception{
 	public AccountCreationException(String message) {
 		super(message);
 	}
 }
+//unchecked
 class NotSufficientFundException extends RuntimeException{
 	public NotSufficientFundException(String message) {
 		super(message);
@@ -14,6 +17,7 @@ class NotSufficientFundException extends RuntimeException{
 class Account {
 	private int id;
 	private double balance;
+
 	public Account(int id, double balance) throws AccountCreationException  {
 		this.id = id;
 		this.balance = balance;
@@ -43,14 +47,13 @@ class Account {
 public class C_CustomEx {
 
 	public static void main(String[] args) {
-		try{
-			Account account=new Account(1, 60000);
-			account.withdraw(100000);
-			account.printDetails();
-		}catch(AccountCreationException e){
+
+        try {
+            Account account=new Account(1, 60000);
+			account.withdraw(4000);
+        } catch (AccountCreationException e) {
 			System.out.println(e.getMessage());
-		}catch (NotSufficientFundException e) {
-			System.out.println(e.getMessage());
-		}
-	}
+        }
+
+    }
 }
