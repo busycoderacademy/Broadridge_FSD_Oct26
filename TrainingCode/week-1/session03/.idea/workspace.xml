@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4defd27-f667-4920-95f3-4a147bce3e3a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/A_Overloading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/B_DemoOverriding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/C_DemoAbstractClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/D_DemoInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/E_DemoWhyHellWeNeedInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/G_WhyInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/empmgt1/F_EmployeeMgt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex1/empmgt2/F_EmployeeMgt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex2/A_DemoString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex2/C_DemoWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/A_NeedOfExHanding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/B_CheckedEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/C_CustomEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/D2_NeverThrowsAnyExFromFinally.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/D_NeverReturnAnyThingFromFinally.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/E_SomeCommonEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/F_WhenToUseThrowsVsThrow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/G2_ExHandlingInCtr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/G_ExHandlingInOverriding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex3/RestrantProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex4/A_BasicIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex4/ByteStreams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex5/demo1/DemoDeSer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex5/demo1/DemoSer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/session3code/ex5/demo2/SerOrderMustBeFollowed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/session02/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3LGMDnKJc4bj2wBpVjGt7fhFZ7P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.A_CallByValueVsCallByRef.executor": "Run",
+    "Application.A_DemoString.executor": "Run",
+    "Application.A_HelloClass.executor": "Run",
+    "Application.A_NeedOfExHanding.executor": "Run",
+    "Application.A_Overloading.executor": "Run",
+    "Application.B.executor": "Run",
+    "Application.B_CheckedEx.executor": "Run",
+    "Application.B_DemoOverriding.executor": "Run",
+    "Application.B_PrivateCtr.executor": "Run",
+    "Application.ByteStreams.executor": "Run",
+    "Application.C_CustomEx.executor": "Run",
+    "Application.C_DemoWrapper.executor": "Run",
+    "Application.C_Inheritance.executor": "Run",
+    "Application.D2_NeverThrowsAnyExFromFinally.executor": "Run",
+    "Application.D_BoxExample.executor": "Run",
+    "Application.D_NeverReturnAnyThingFromFinally.executor": "Run",
+    "Application.DemoFaceRecSystem.executor": "Run",
+    "Application.DemoShapApp.executor": "Run",
+    "Application.E_SomeCommonEx.executor": "Run",
+    "Application.F_EmployeeMgt.executor": "Run",
+    "Application.G_ExHandlingInOverriding.executor": "Run",
+    "Application.Has_A.executor": "Run",
+    "Application.RestrantProblem.executor": "Run",
+    "Application.Use_A.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Broadridge_FSD_Oct26/TrainingCode/week-1/session03/src/main/java/com/session3code/ex3",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Broadridge_FSD_Oct26\TrainingCode\week-1\session03\src\main\java\com\session3code\ex3" />
+      <recent name="C:\Broadridge_FSD_Oct26\TrainingCode\week-1\session03\src\main\java\com\session3code\ex5" />
+      <recent name="C:\Broadridge_FSD_Oct26\TrainingCode\week-1\session03\src\main\java\com\session3code\ex1\empmgt2" />
+      <recent name="C:\Broadridge_FSD_Oct26\TrainingCode\week-1\session03\src\main\java\com\session3code\ex0" />
+      <recent name="C:\Broadridge_FSD_Oct26\TrainingCode\week-1\session03\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.session3code.ex3" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="A_CallByValueVsCallByRef" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.session3code.ex1.A_CallByValueVsCallByRef" />
+      <module name="session03-04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.session3code.ex1.empmgt1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="A_HelloClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.session02.A_HelloClass" />
+      <module name="session03-04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.session02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.b.B" />
+      <module name="session02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.b.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C_DemoWrapper" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.session3code.ex2.C_DemoWrapper" />
+      <module name="session03-04" />
+      <option name="PROGRAM_PARAMETERS" value="-XX:AutoBoxCacheMax=1000" />
+      <option name="VM_PARAMETERS" value="-XX:AutoBoxCacheMax=1000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.session3code.ex2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoShapApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.session02.shape.DemoShapApp" />
+      <module name="session02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.session02.shape.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="E_SomeCommonEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.session3code.ex3.E_SomeCommonEx" />
+      <module name="session03-04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.session3code.ex3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="session03-04" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="session03-04" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.E_SomeCommonEx" />
+        <item itemvalue="Application.A_CallByValueVsCallByRef" />
+        <item itemvalue="Application.A_HelloClass" />
+        <item itemvalue="Application.DemoShapApp" />
+        <item itemvalue="Application.B" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4defd27-f667-4920-95f3-4a147bce3e3a" name="Changes" comment="" />
+      <created>1793075834147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793075834147</updated>
+      <workItem from="1793075838303" duration="10986000" />
+      <workItem from="1793148849168" duration="14532000" />
+      <workItem from="1793241904373" duration="6809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

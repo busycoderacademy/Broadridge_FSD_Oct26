@@ -4,12 +4,13 @@ import com.bankapp.dto.Account;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class DemoFileHandlingReadingAcconts {
     public static void main(String[] args) {
         List<Account> accounts=getAllAccounts();
-        for(Account account:accounts){
+        for(Account account: accounts){
             System.out.println(account);
         }
     }
@@ -17,24 +18,26 @@ public class DemoFileHandlingReadingAcconts {
 
 
     private static List<Account> getAllAccounts() {
-        //read the file make token of each file sepeate on behalf of : put them into a arrayList and return the the user
-        List<Account> accounts = new ArrayList<>();
-
+        List<Account> accounts = new LinkedList<>();
         try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("accounts.txt")));
+            BufferedReader br=new BufferedReader(new FileReader(new File("accounts.txt")));
             String line=null;
-            while((line=bufferedReader.readLine())!=null){
-                String[] tokens = line.split(":");
-                // public Account(int id, String name, double balance)
-                Account account = new Account(Integer.parseInt(tokens[0]), tokens[1], Double.parseDouble(tokens[2]));
 
-                accounts.add(account);
+            while((line=br.readLine())!=null){
+                String tokens[]=line.split(":");
+                Integer id=Integer.parseInt(tokens[0]);
+                String name=tokens[1];
+                Double balance=Double.parseDouble(tokens[2]);
+
+                accounts.add(new Account(id,name,balance));
             }
+
         } catch (FileNotFoundException e) {
-            System.out.println("file is not found");
+            System.out.println("file not found");
         }catch(IOException e){
-            System.out.println("some io exction");
+            System.out.println("some io exception");
         }
+
         return accounts;
     }
 }
