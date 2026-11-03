@@ -1,21 +1,17 @@
 package com.session05.topic.map;
-
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
-
-class MyKey implements Comparable<MyKey>{
+class MyKey {
 	private int k;
-
 	public int getK() {
 		return k;
 	}
-
 	public MyKey(int k) {
 		super();
 		this.k = k;
 	}
-
 	@Override
 	public String toString() {
 		return "MyKey [k=" + k + "]";
@@ -38,33 +34,39 @@ class MyKey implements Comparable<MyKey>{
 		return k == other.k;
 	}
 
-	@Override
-	public int compareTo(MyKey o) {
-		return Integer.compare(this.getK(), o.getK());
-	}
+//	@Override
+//	public int compareTo(MyKey o) {
+//		return Integer.compare(this.getK(), o.getK());
+//	}
 
 }
 
 public class I_UserDefineKey {
-
 	public static <T> void main(String[] args) {
-		
-		Map<MyKey, String> map=new TreeMap<>(( o1,  o2)-> Integer.compare(o2.getK(), o1.getK()));
-		
-		
-//		Map<MyKey, String> map=new TreeMap<>(new Comparator<MyKey>() {
-//			@Override
-//			public int compare(MyKey o1, MyKey o2) {
-//				return Integer.compare(o2.getK(), o1.getK());
-//			}
-//		});
-		
-		map.put(new MyKey(80), "Eighty");
-		map.put(new MyKey(82), "Hundered");
-		map.put(new MyKey(84), "Eighty four");
-		//String value=map.get(new MyKey(80));
-		//System.out.println(value);
-		map.forEach((k,v)->System.out.println(k+": "+ v) );
+		Map<MyKey, String> map=new HashMap<>();
+		map.put(new MyKey(1), "1");
+		map.put(new MyKey(2), "2");
+		System.out.println(map.get(new MyKey(2)));
+
+
+
+
+
+//
+//
+////		Map<MyKey, String> map=new TreeMap<>(new Comparator<MyKey>() {
+////			@Override
+////			public int compare(MyKey o1, MyKey o2) {
+////				return Integer.compare(o2.getK(), o1.getK());
+////			}
+////		});
+//
+//		map.put(new MyKey(80), "Eighty");
+//		map.put(new MyKey(82), "Hundered");
+//		map.put(new MyKey(84), "Eighty four");
+//		//String value=map.get(new MyKey(80));
+//		//System.out.println(value);
+//		map.forEach((k,v)->System.out.println(k+": "+ v) );
 
 	}
 }

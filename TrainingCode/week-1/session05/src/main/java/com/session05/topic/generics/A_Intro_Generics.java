@@ -13,13 +13,15 @@ public class A_Intro_Generics {
 		//Why to use generics?
 		//"Generics is type essared"
 		//java 5+ 17
-		List<String> list = new LinkedList<>();
+		List<String> list = new LinkedList<String>();
 		list.add("foo");
 		list.add("bar");
 		list.add("foo");
 		list.add("apple");
 		list.add("umesh");
-		myFoo(list);
+
+
+
 		for(String data: list) {
 			System.out.println(data);
 		}

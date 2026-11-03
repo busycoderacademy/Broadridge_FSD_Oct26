@@ -7,7 +7,7 @@ import java.util.List;
 public class B_Extends_Super {
 
 	public static void main(String[] args) {
-		//
+		//? extends XXX
 		List<Integer> list = new LinkedList<>();
 		list.add(8);
 		list.add(19);
@@ -30,20 +30,26 @@ public class B_Extends_Super {
         employees.add(new Employee(102, "Amit", 75000));
         employees.add(new Employee(103, "Neha", 120000));
         employees.add(new Employee(104, "Kiran", 85000));
-        
+//
         print(employees);
+
+
 
 	}
 	//hey compiler i can pass any list whose memember have something to do with Number 
 	//i promise u i will iterate and never change it
-	
-	private static void print(List<?> list) {
-		//list.add(new Cat());
-		for (Object data : list) {
-			System.out.println(data);
+
+//	public static void print(List<Integer> list)
+	//public static void print(List<Double> list) both are wrapper classes and there base class is Number
+	//u can print the list of any number, that in case if ds is producing the data ==> extends
+	//public static void print(List<? extends Object> list)
+
+	public static void print(List<? > list){
+		//list.add("foo");
+		for(Object temp: list){
+			System.out.println(temp);
 		}
 	}
-	
 	
 	
 	

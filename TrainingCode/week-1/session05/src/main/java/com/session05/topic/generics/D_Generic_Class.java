@@ -2,47 +2,65 @@ package com.session05.topic.generics;
 
 import java.lang.reflect.Array;
 
-class Bar<T extends Comparable<T>> {
-	T i;
-	T j;
-
-	public T getI() {
-		return i;
-	}
-
-	public void setI(T i) {
-		this.i = i;
-	}
-
-	public T getJ() {
-		return j;
-	}
-
-	public void setJ(T j) {
-		this.j = j;
-	}
-
-}
-
-class Foo<T> {
-	T i;
-
-	public T getI() {
-		return i;
-	}
-
-	public void setI(T i) {
-		this.i = i;
-	}
-
-}
-//9958543978
+//class Bar<T extends Comparable<T>> {
+//	T i;
+//	T j;
+//
+//	public T getI() {
+//		return i;
+//	}
+//
+//	public void setI(T i) {
+//		this.i = i;
+//	}
+//
+//	public T getJ() {
+//		return j;
+//	}
+//
+//	public void setJ(T j) {
+//		this.j = j;
+//	}
+//
+//}
+//
+//class Foo<T> {
+//	T i;
+//
+//	public T getI() {
+//		return i;
+//	}
+//
+//	public void setI(T i) {
+//		this.i = i;
+//	}
+//
+//}
 
 class UnderFlowEx extends RuntimeException {
 }
 
 class OverFlowEx extends RuntimeException {
 }
+
+//What is generic class?
+/* also template class in c++ Stack s=new Stack(); i u create a genric stack u dont have to create multiple version
+
+ */
+
+class MyClass <T>{
+	private T i;
+
+	public T getI() {
+		return i;
+	}
+
+	public void setI(T i) {
+		this.i = i;
+	}
+}
+
+
 
 class Stack<T> {
 	private T x[];
@@ -77,13 +95,24 @@ public class D_Generic_Class {
 
 	public static void main(String[] args) {
 
+//		MyClass<Integer> myClass=new MyClass<>();
+//		myClass.setI(3);
+//		System.out.println(myClass.getI());
+//
+//		MyClass<Double> doubleMyClass=new MyClass<>();
+//		doubleMyClass.setI(3.14);
+//		System.out.println(doubleMyClass.getI());
+
+
+
+
 //		Stack<Integer> s=new Stack<>(Integer.class, 10);
 //		s.push(2);
 //		System.out.println(s.pop());
 
-//		Stack<String> s=new Stack<>(String.class, 10);
-//		s.push("foo");
-//		System.out.println(s.pop());
+		Stack<String> s=new Stack<>(String.class, 10);
+		s.push("foo");
+		System.out.println(s.pop());
 
 //		Foo<String> foo=new Foo<>();
 //		foo.setI("foo");
