@@ -1,0 +1,7 @@
+INFO  | 2026-11-05 11:10:37 | [main] demo.DemoApp (DemoApp.java:12) - Hello World
+ERROR | 2026-11-05 11:10:37 | [main] demo.DemoApp (DemoApp.java:18) - Exception occurred
+java.lang.NumberFormatException: For input string: "a10"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:662) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
+	at com.demo.DemoApp.main(DemoApp.java:16) [classes/:?]
