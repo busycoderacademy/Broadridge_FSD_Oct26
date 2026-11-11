@@ -11,13 +11,11 @@ import java.util.List;
 public class B_GetAll {
     public static void main(String[] args) {
 
-        EntityManagerFactory emf= Persistence.createEntityManagerFactory("busycoder");
+        EntityManagerFactory emf= Persistence.createEntityManagerFactory("jpasession");
         EntityManager em=emf.createEntityManager();
-
-        EntityTransaction tx=em.getTransaction();
-
+        //JPQL
         List<Employee> employees=em.createQuery("select e from Employee e", Employee.class).getResultList();
-
+        employees.forEach(System.out::println);
         em.close();
         emf.close();
 
