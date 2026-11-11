@@ -8,29 +8,25 @@ import org.hibernate.Transaction;
 
 public class E_DelEmployee {
     public static void main(String[] args) {
-        //hello world to add a rec to the db
-
-        //1. get the session factory
         SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();
-        //2. get the session from the session factory
         Session session=sessionFactory.openSession();
-
-        //3. u need to start the tx
+        //featch the record no tx
         Transaction tx=session.getTransaction();
         try{
             tx.begin();
-          //pls try
+            Employee employee = session.get(Employee.class,1);//get vs load, here hib hit the db
+            if(employee!=null){
+               session.delete(employee);
+            }
             tx.commit();
         }catch (HibernateException e){
-            System.out.println(e);
             tx.rollback();
         }
-        session.close();
+
+
+        session.close();//detached
+
         sessionFactory.close();
-
-
-        //close the session
-        //close the session factory
 
 
     }

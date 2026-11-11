@@ -11,15 +11,25 @@ import java.util.Objects;
 
 public class B_GetAllEmployee {
     public static void main(String[] args) {
-        //hello world to add a rec to the db
 
         //1. get the session factory
         SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();
         //2. get the session from the session factory
         Session session=sessionFactory.openSession();
+        //orm it automatically featch all tuples and convert them to object
+        //hiberante SQLX            HQL (hibernate Query language): database portablity mysql vs oracle
+        //What is HQL aka oo wrapper on top of SQL
+//        List<Object[]> employees=session.createQuery("select e.name, e.salary from Employee e").list();
+//        for (Object []arr: employees){
+//            System.out.println(arr[0]+": "+ arr[1]);
+//        }
 
-        //3. u need to start the tx
-        Transaction tx=session.getTransaction();
+        List<EmployeeSelectedDataDto> employeesSelectedField=session
+                .createQuery("select new com.empapp.basics.EmployeeSelectedDataDto(e.name, e.salary) from Employee e").list();
+
+        employeesSelectedField.forEach(System.out::println);
+
+
 
         //hey hib i want all the records : orm, HQL OO way of writing sql vs SQL
 //        List<Employee> employees=session.createQuery("select e from Employee e", Employee.class).getResultList();
@@ -37,13 +47,13 @@ public class B_GetAllEmployee {
 //        employees.forEach(e-> System.out.println(e));
 
         //REST vs
-        List<Object[]> employees=session
-                .createQuery("select e.name,e.salary from Employee e", Object[].class).getResultList();
+//        List<Object[]> employees=session
+//                .createQuery("select e.name,e.salary from Employee e", Object[].class).getResultList();
 
        //one in one ?
 
-        session.close();
-        sessionFactory.close();
+//        session.close();
+//        sessionFactory.close();
 
 
         //close the session

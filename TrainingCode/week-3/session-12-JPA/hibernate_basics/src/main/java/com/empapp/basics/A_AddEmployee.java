@@ -11,34 +11,29 @@ public class A_AddEmployee {
         //hello world to add a rec to the db
 
         //1. get the session factory
-        SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();
+        SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();//Singleton DP
         //2. get the session from the session factory
-        Session session=sessionFactory.openSession();
+        Session session=sessionFactory.openSession();//it wrap jdbc connection under the code, not thread safe
 
-        //3. u need to start the tx
         Transaction tx=session.getTransaction();
         try{
             tx.begin();
             Employee employee1=new Employee("sumit",6700,"IT");
             Employee employee2=new Employee("kapil",9700,"Training");
             Employee employee3=new Employee("Seema",9710,"Fin");
-            session.persist(employee1);
-            session.persist(employee2);
-//            if(1==1)
-//                throw  new RuntimeException();
-            session.persist(employee3);
-
+            //orm
+            session.save(employee1); // session.persist(employee1);
+            session.save(employee2);
+            session.save(employee3);
             tx.commit();
         }catch (HibernateException e){
-            System.out.println(e);
             tx.rollback();
         }
-        session.close();
-        sessionFactory.close();
-
 
         //close the session
+        session.close();
         //close the session factory
+        sessionFactory.close();
 
 
     }
