@@ -1,14 +1,8 @@
 package com.demo.m2m;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.Table;
 
 import java.util.*;
 @Entity
@@ -19,7 +13,10 @@ public class Project {
 	private int projectId;
 	
 	private String projectName;
-	
+
+	@JoinTable(name = "e_p_jt",
+	joinColumns = @JoinColumn(name = "pid_fk"),
+	inverseJoinColumns = @JoinColumn(name = "eid_fk"))
 	@ManyToMany
 	private List<Employee> employees = new ArrayList<Employee>();
 

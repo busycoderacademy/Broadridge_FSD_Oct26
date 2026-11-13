@@ -7,18 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jpa-04-one-2-one-uni" />
         <module name="bankapp_jpa_eclipselink" />
         <module name="02-el-collection" />
-        <module name="jpa-05-one-2-many" />
-        <module name="01-embedded" />
         <module name="jpa-06-m2m" />
-        <module name="bankapp_jpa" />
         <module name="jpa_basics" />
         <module name="jpa-03-one-2-one-bi" />
         <module name="hibernate_basics" />
-        <module name="jpa-07-inh-mapping" />
+        <module name="jpa_cache" />
+        <module name="jpa-04-one-2-one-uni" />
+        <module name="jpa-07-b-inh-mapping" />
+        <module name="jpa-05-one-2-many" />
+        <module name="jpa-07-a-inh-mapping" />
+        <module name="01-embedded" />
+        <module name="bankapp_jpa" />
+        <module name="jpa-07-c-inh-mapping" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa-07-inh-mapping" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

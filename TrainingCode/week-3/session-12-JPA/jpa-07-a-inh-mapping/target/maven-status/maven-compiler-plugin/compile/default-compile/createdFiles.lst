@@ -1,0 +1,5 @@
+com\demo\factory\EmFactory.class
+com\demo\inh\singletable\DemoTester.class
+com\demo\inh\singletable\Account.class
+com\demo\inh\singletable\CurrentAccount.class
+com\demo\inh\singletable\SavingAccount.class

@@ -1,0 +1,5 @@
+com\demo\factory\EmFactory.class
+com\demo\inh\joined\Account.class
+com\demo\inh\joined\CurrentAccount.class
+com\demo\inh\joined\SavingAccount.class
+com\demo\inh\joined\DemoTester.class

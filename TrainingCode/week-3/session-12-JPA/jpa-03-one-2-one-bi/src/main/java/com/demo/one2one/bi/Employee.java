@@ -2,17 +2,16 @@ package com.demo.one2one.bi;
 
 import jakarta.persistence.*;
 //owner
-@Entity
+@Entity(name = "EMP_Entity")
 @Table(name = "emp_table")
 public class Employee {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int empId;
 	private String empName;
 
 	@JoinColumn(name = "pid_fk")
-	@OneToOne
+	@OneToOne(fetch =  FetchType.LAZY)
 	private Parking parking;
 
 	public Parking getParking() {

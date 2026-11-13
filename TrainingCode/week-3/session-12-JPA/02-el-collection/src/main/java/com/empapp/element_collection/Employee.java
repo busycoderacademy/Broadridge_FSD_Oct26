@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @ToString
-@Entity
+@Entity(name = "Employee_Entity")
 @Table(name = "employee_table_ymsli")
 public class Employee {
     @Id
@@ -30,7 +30,7 @@ public class Employee {
     private String dept;
 
     //employee have many email
-    @ElementCollection(fetch = FetchType.LAZY)
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "employee_emails")
     private List<String> emails=new ArrayList<>();
 

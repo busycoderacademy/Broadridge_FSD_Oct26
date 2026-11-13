@@ -8,6 +8,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 public class SessionFactoryUtil {
 
     private static  SessionFactory sf=null;
+
     private SessionFactoryUtil(){}
 
     public static SessionFactory getSessionFactory(){

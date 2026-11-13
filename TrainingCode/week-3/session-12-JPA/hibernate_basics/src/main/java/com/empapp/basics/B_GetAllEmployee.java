@@ -16,6 +16,22 @@ public class B_GetAllEmployee {
         SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();
         //2. get the session from the session factory
         Session session=sessionFactory.openSession();
+        //Print a d u :tx : jdbc : SQL      hibernate/jpa: HQL (hibernate Query language) :oo way to deal with databaes
+//        List<Employee> employees=session
+//                .createQuery("select e from Employee e", Employee.class).getResultList();
+//        employees.forEach(System.out::println);
+
+//        List<String> employees=session
+//                .createQuery("select e.name from Employee e", String.class).getResultList();
+//        employees.forEach(System.out::println);
+
+        List<String> employees=session
+                .createQuery("select e.name from Employee e where e.dept=:dept", String.class)
+                .setParameter("dept","IT")
+                .getResultList();
+        employees.forEach(System.out::println);
+
+
         //orm it automatically featch all tuples and convert them to object
         //hiberante SQLX            HQL (hibernate Query language): database portablity mysql vs oracle
         //What is HQL aka oo wrapper on top of SQL
@@ -24,10 +40,10 @@ public class B_GetAllEmployee {
 //            System.out.println(arr[0]+": "+ arr[1]);
 //        }
 
-        List<EmployeeSelectedDataDto> employeesSelectedField=session
-                .createQuery("select new com.empapp.basics.EmployeeSelectedDataDto(e.name, e.salary) from Employee e").list();
-
-        employeesSelectedField.forEach(System.out::println);
+//        List<EmployeeSelectedDataDto> employeesSelectedField=session
+//                .createQuery("select new com.empapp.basics.EmployeeSelectedDataDto(e.name, e.salary) from Employee e").list();
+//
+//        employeesSelectedField.forEach(System.out::println);
 
 
 

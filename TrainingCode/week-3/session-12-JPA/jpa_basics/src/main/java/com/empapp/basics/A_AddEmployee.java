@@ -15,31 +15,24 @@ public class A_AddEmployee {
         //update    merge
         //delete  remove
 
-       EntityManagerFactory entityManagerFactory =
-               Persistence.createEntityManagerFactory("jpasession");
-       EntityManager em =  entityManagerFactory.createEntityManager();
-       EntityTransaction tx=em.getTransaction();
-       try{
-           tx.begin();
-           Employee employee1=new Employee("sumit",6700,"IT");
-           Employee employee2=new Employee("kapil",9700,"Training");
-           Employee employee3=new Employee("Seema",9710,"Fin");
+        EntityManagerFactory entityManagerFactory =
+                Persistence.createEntityManagerFactory("jpasession");
+        EntityManager em =  entityManagerFactory.createEntityManager();
+        EntityTransaction tx=em.getTransaction();
+        try{
+            tx.begin();
+            Employee employee1=new Employee("sumit",6700,"IT");
+            Employee employee2=new Employee("kapil",9700,"Training");
+            Employee employee3=new Employee("Seema",9710,"Fin");
+            //orm
+            em.persist(employee1); // session.persist(employee1);
+            em.persist(employee2);
+            em.persist(employee3);
+            tx.commit();
 
-           em.persist(employee1);
-           em.persist(employee2);
-           em.persist(employee3);
-
-           tx.commit();
-       } catch (Exception e) {
-           tx.rollback();
-           e.printStackTrace();
-       }
-
-        //close the session
-        em.close();
-       entityManagerFactory.close();
-        //close the session factory
-
-
+        } catch (Exception e) {
+            tx.rollback();
+            System.out.println(e);
+        }
     }
 }

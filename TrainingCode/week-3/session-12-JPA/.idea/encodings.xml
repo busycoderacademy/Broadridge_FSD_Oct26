@@ -19,9 +19,17 @@
     <file url="file://$PROJECT_DIR$/jpa-05-one-2-many/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-06-m2m/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-06-m2m/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-07-a-inh-mapping/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-07-a-inh-mapping/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-07-b-inh-mapping/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-07-b-inh-mapping/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-07-c-inh-mapping/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa-07-c-inh-mapping/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-07-inh-mapping/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa_basics/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa_basics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa_cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpa_cache/src/main/resources" charset="UTF-8" />
   </component>
 </project>

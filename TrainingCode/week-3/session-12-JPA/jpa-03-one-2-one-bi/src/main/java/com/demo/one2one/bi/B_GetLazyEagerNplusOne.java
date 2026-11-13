@@ -12,15 +12,33 @@ public class B_GetLazyEagerNplusOne {
         EntityManager em=emf.createEntityManager();
 
         //JPQL
-        //getting all parking object
-//        List<Parking> parkings=
-//                em.createQuery("select p from Parking p", Parking.class).getResultList();
-////
-////
-//        System.out.println("---------------------------------");
-//        for(Parking p: parkings){
-//            System.out.println(p);
-//            System.out.println("****************************");
+        //getting all parking object: one project 1 + N problem
+        List<Parking> parkings=
+                em.createQuery("select p from Parking p",
+                        Parking.class).getResultList();
+//////
+//////
+        System.out.println("---------------------------------");
+        for(Parking p: parkings){
+            System.out.println(p);
+            System.out.println("****************************");
+            System.out.println(p.getEmployee());
+        }
+
+//        List<Parking> parkings = em.createQuery(
+//                "select p from Parking p",
+//                Parking.class
+//        ).getResultList();
+//
+//        System.out.println("Parking records loaded");
+//
+//        for (Parking p : parkings) {
+//            System.out.println(p.getParkingLocation());
+//        }
+//
+//        System.out.println("Now accessing Employee");
+//
+//        for (Parking p : parkings) {
 //            System.out.println(p.getEmployee());
 //        }
 

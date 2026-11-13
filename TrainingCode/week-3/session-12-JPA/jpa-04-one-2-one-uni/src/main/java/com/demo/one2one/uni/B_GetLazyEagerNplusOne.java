@@ -13,16 +13,16 @@ public class B_GetLazyEagerNplusOne {
 
         //JPQL
         //getting all parking object
-//        List<Parking> parkings=
-//                em.createQuery("select p from Parking p", Parking.class).getResultList();
+        List<Parking> parkings=
+                em.createQuery("select p from Parking p", Parking.class).getResultList();
 ////
 ////
-//        System.out.println("---------------------------------");
-//        for(Parking p: parkings){
-//            System.out.println(p);
-//            System.out.println("****************************");
-//            System.out.println(p.getEmployee());
-//        }
+        System.out.println("---------------------------------");
+        for(Parking p: parkings){
+            System.out.println(p);
+            System.out.println("****************************");
+            System.out.println(p.getEmployee());
+        }
 
         //fetch join : solve N+1 problem==> total Quaries would be 1
 //        List<Parking> parkings=

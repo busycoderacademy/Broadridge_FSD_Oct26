@@ -3,16 +3,8 @@ package com.demo.one2many;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.BatchSize;
-
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "d_table_y")
@@ -24,8 +16,9 @@ public class Department {
 
 	private String detpName;
 	
-	@BatchSize(size=2)
-	@OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//	@BatchSize(size=2)
+//	@OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "department", fetch =  FetchType.LAZY, cascade =   CascadeType.ALL)
 	private List<Employee> employees = new ArrayList<Employee>();
 
 	public Department(String detpName) {

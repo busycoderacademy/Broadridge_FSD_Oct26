@@ -5,13 +5,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baa0e608-eb06-4d8d-a11a-493f02aff50e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session-14-servlet-jsp/mvc1/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-el-collection/src/main/java/com/empapp/element_collection/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-el-collection/src/main/java/com/empapp/element_collection/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-el-collection/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/02-el-collection/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/A_AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/A_AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/B_GetAllEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/B_GetAllEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/C_GetById.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/C_GetById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/empapp/basics/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/util/factory/SessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_basics/src/main/java/com/util/factory/SessionFactoryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate_basics/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate_basics/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/java/com/demo/one2one/bi/B_GetLazyEagerNplusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/java/com/demo/one2one/bi/B_GetLazyEagerNplusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/java/com/demo/one2one/bi/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/java/com/demo/one2one/bi/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/java/com/demo/one2one/bi/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/java/com/demo/one2one/bi/Parking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-03-one-2-one-bi/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/src/main/java/com/demo/one2one/uni/B_GetLazyEagerNplusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/src/main/java/com/demo/one2one/uni/B_GetLazyEagerNplusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/src/main/java/com/demo/one2one/uni/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/src/main/java/com/demo/one2one/uni/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/src/main/java/com/demo/one2one/uni/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/src/main/java/com/demo/one2one/uni/Parking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/factory/EmFactoryFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/factory/EmFactoryFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/A_Add_OneToOneUni.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/A_Add_OneToOneUni.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/B_GetLazyEagerNplusOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/B_GetLazyEagerNplusOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/Parking.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-04-one-2-one-uni/target/classes/com/demo/one2one/uni/Parking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-05-one-2-many/src/main/java/com/demo/one2many/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-05-one-2-many/src/main/java/com/demo/one2many/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-05-one-2-many/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-05-one-2-many/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/src/main/java/com/demo/m2m/DemoTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/src/main/java/com/demo/m2m/DemoTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/src/main/java/com/demo/m2m/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/src/main/java/com/demo/m2m/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/factory/EmFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/factory/EmFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/m2m/DemoTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/m2m/DemoTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/m2m/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/m2m/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/m2m/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/jpa-06-m2m/target/classes/com/demo/m2m/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.factorypath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/logfile.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/factory/EmFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/joined/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/joined/CurrentAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/joined/DemoTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/joined/SavingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/single_table/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/single_table/CurrentAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/single_table/DemoTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/single_table/SavingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/table_per_con_class/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/table_per_con_class/CurrentAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/table_per_con_class/DemoTester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/java/com/demo/inh/table_per_con_class/SavingAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/factory/EmFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/joined/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/joined/CurrentAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/joined/DemoTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/joined/SavingAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/single_table/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/single_table/CurrentAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/single_table/DemoTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/single_table/SavingAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/table_per_con_class/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/table_per_con_class/CurrentAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/table_per_con_class/DemoTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/com/demo/inh/table_per_con_class/SavingAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa-07-inh-mapping/target/classes/log4j2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jpa_basics/src/main/java/com/empapp/basics/A_AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa_basics/src/main/java/com/empapp/basics/A_AddEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jpa_basics/src/main/java/com/empapp/basics/B_GetAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa_basics/src/main/java/com/empapp/basics/B_GetAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpa_basics/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jpa_basics/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa_basics/src/main/java/com/empapp/basics/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa_basics/src/main/java/com/empapp/basics/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,43 +120,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.A_AddEmployee.executor": "Run",
-    "Application.AccountTester (1).executor": "Run",
-    "Application.AccountTester.executor": "Run",
-    "Application.B_GetAll.executor": "Run",
-    "Application.B_GetAllEmployee.executor": "Run",
-    "Application.C_GetById.executor": "Run",
-    "Application.D_EmployeeUpdate.executor": "Run",
-    "Application.E_DelEmployee.executor": "Run",
-    "Application.com.empapp.basics.A_AddEmployee (1).executor": "Run",
-    "Application.com.empapp.basics.A_AddEmployee.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Broadridge_FSD_Oct26/TrainingCode/week-3/session-12-JPA/bankapp_jpa/src/main/resources",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.A_AddEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.A_Add_OneToOneUni.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccountTester (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccountTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.B_GetAll.executor&quot;: &quot;Run&quot;,
+    &quot;Application.B_GetAllEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.B_GetLazyEagerNplusOne.executor&quot;: &quot;Run&quot;,
+    &quot;Application.C_GetById.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CacheDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.D_EmployeeUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DemoTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.E_DelEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.demo.inh.joined.DemoTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.demo.inh.singletable.DemoTester (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.demo.inh.singletable.DemoTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.demo.inh.table_per_con_class.DemoTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.demo.one2one.uni.A_Add_OneToOneUni.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.demo.one2one.uni.B_GetLazyEagerNplusOne.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.empapp.basics.A_AddEmployee (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.empapp.basics.A_AddEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.empapp.element_collection.A_AddEmployee.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa-07-a-inh-mapping [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa-07-a-inh-mapping [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa-07-a-inh-mapping [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa-07-b-inh-mapping [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa-07-b-inh-mapping [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa-07-b-inh-mapping [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Broadridge_FSD_Oct26/TrainingCode/week-3/session-12-JPA/bankapp_jpa/src/main/resources&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Broadridge_FSD_Oct26\TrainingCode\week-3\session-12-JPA\bankapp_jpa\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AccountTester (1)">
-    <configuration name="AccountTester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bankapp.controller.AccountTester" />
-      <module name="bankapp_jpa_eclipselink" />
+  <component name="RunManager" selected="Application.com.demo.inh.table_per_con_class.DemoTester">
+    <configuration name="DemoTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.m2m.DemoTester" />
+      <module name="jpa-06-m2m" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bankapp.controller.*" />
+          <option name="PATTERN" value="com.demo.m2m.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bankapp.controller.AccountTester" />
-      <module name="bankapp_jpa" />
+    <configuration name="com.demo.inh.joined.DemoTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.inh.joined.DemoTester" />
+      <module name="jpa-07-b-inh-mapping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bankapp.controller.*" />
+          <option name="PATTERN" value="com.demo.inh.joined.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +194,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="B_GetAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.empapp.basics.B_GetAll" />
-      <module name="jpa_basics" />
+    <configuration name="com.demo.inh.singletable.DemoTester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.inh.singletable.DemoTester" />
+      <module name="jpa-07-a-inh-mapping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.empapp.basics.*" />
+          <option name="PATTERN" value="com.demo.inh.singletable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +207,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.empapp.basics.A_AddEmployee (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.empapp.basics.A_AddEmployee" />
-      <module name="jpa_basics" />
+    <configuration name="com.demo.inh.singletable.DemoTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.inh.singletable.DemoTester" />
+      <module name="jpa-07-inh-mapping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.empapp.basics.*" />
+          <option name="PATTERN" value="com.demo.inh.singletable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +220,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.empapp.basics.A_AddEmployee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.empapp.basics.A_AddEmployee" />
-      <module name="hibernate_basics" />
+    <configuration name="com.demo.inh.table_per_con_class.DemoTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.inh.table_per_con_class.DemoTester" />
+      <module name="jpa-07-c-inh-mapping" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.empapp.basics.*" />
+          <option name="PATTERN" value="com.demo.inh.table_per_con_class.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AccountTester (1)" />
-        <item itemvalue="Application.AccountTester" />
-        <item itemvalue="Application.B_GetAll" />
-        <item itemvalue="Application.com.empapp.basics.A_AddEmployee (1)" />
-        <item itemvalue="Application.com.empapp.basics.A_AddEmployee" />
+        <item itemvalue="Application.com.demo.inh.table_per_con_class.DemoTester" />
+        <item itemvalue="Application.com.demo.inh.joined.DemoTester" />
+        <item itemvalue="Application.com.demo.inh.singletable.DemoTester (1)" />
+        <item itemvalue="Application.com.demo.inh.singletable.DemoTester" />
+        <item itemvalue="Application.DemoTester" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +259,11 @@
       <option name="presentableId" value="Default" />
       <updated>1794298214981</updated>
       <workItem from="1794298216039" duration="259000" />
-      <workItem from="1794368351528" duration="8366000" />
+      <workItem from="1794368351528" duration="8937000" />
+      <workItem from="1794444536490" duration="451000" />
+      <workItem from="1794446042583" duration="14944000" />
+      <workItem from="1794532441544" duration="673000" />
+      <workItem from="1794544616013" duration="1683000" />
     </task>
     <servers />
   </component>

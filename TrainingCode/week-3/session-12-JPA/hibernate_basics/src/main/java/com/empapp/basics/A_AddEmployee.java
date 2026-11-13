@@ -8,14 +8,14 @@ import org.hibernate.Transaction;
 
 public class A_AddEmployee {
     public static void main(String[] args) {
-        //hello world to add a rec to the db
-
-        //1. get the session factory
-        SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();//Singleton DP
-        //2. get the session from the session factory
-        Session session=sessionFactory.openSession();//it wrap jdbc connection under the code, not thread safe
-
+     //1 u need to create sessionfactory
+        SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();
+        //2. create session
+        Session session=sessionFactory.openSession();
+        //3. start the transaction
         Transaction tx=session.getTransaction();
+
+        //4. save the emp: u write oo code
         try{
             tx.begin();
             Employee employee1=new Employee("sumit",6700,"IT");
@@ -29,12 +29,5 @@ public class A_AddEmployee {
         }catch (HibernateException e){
             tx.rollback();
         }
-
-        //close the session
-        session.close();
-        //close the session factory
-        sessionFactory.close();
-
-
     }
 }

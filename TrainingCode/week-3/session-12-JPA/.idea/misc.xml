@@ -15,6 +15,10 @@
         <option value="$PROJECT_DIR$/jpa-07-inh-mapping/pom.xml" />
         <option value="$PROJECT_DIR$/bankapp_jpa/pom.xml" />
         <option value="$PROJECT_DIR$/bankapp_jpa_eclipselink/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-07-a-inh-mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-07-b-inh-mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa-07-c-inh-mapping/pom.xml" />
       </list>
     </option>
   </component>

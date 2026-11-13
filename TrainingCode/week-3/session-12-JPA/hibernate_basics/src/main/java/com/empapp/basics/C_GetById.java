@@ -13,14 +13,15 @@ public class C_GetById {
         SessionFactory sessionFactory=SessionFactoryUtil.getSessionFactory();
         Session session=sessionFactory.openSession();
         //featch the record no tx
-        Employee employee = session.get(Employee.class,1);//get vs load, here hib hit the db
-        //load used under the hood when we learn about join of relationship *
+        Employee e1 = session.get(Employee.class,1);//get vs load, here hib hit the db, joins
         System.out.println("-----------------");
-        System.out.println(employee);
+        System.out.println(e1);
         System.out.println("*******************");
-
+//        session.evict(e1);// batch processing
+        session.clear();
+        Employee e2 = session.get(Employee.class,1);
+        System.out.println(e2);
         session.close();//detached
-
         sessionFactory.close();
 
 

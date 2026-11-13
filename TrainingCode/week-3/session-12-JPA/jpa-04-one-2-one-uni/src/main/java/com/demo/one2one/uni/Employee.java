@@ -1,9 +1,12 @@
 package com.demo.one2one.uni;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.BatchSize;
+
 //owner
-@Entity
+@Entity(name = "EMP_Entity")
 @Table(name = "emp_table")
+@BatchSize(size = 2)
 public class Employee {
 
 	@Id

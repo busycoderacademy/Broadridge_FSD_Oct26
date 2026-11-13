@@ -10,19 +10,17 @@ import lombok.ToString;
 //actually hibernate manage the life cycle of object
 //entity -> pojo with @Enitity @Id
 @Entity
-@Table(name = "emp_table")
+@Table(name = "e1_table")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "emp_id")
+    @Column(name = "eid")
     private int id;
-
-    @Column(name = "emp_name", nullable = false, length = 50)
+    @Column(name = "ename", nullable = false, length = 100)
     private String name;
-    @Column(name = "emp_salary" , nullable = false)
+    @Column(name = "esalary", nullable = false)
     private double salary;
-
-    @Column(name = "emp_dept", nullable = false, length = 50)
+    @Column(name = "edept", nullable = false, length = 100)
     private String dept;
 
 

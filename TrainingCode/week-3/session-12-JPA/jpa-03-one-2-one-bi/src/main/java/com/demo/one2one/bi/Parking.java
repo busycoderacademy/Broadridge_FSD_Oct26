@@ -1,6 +1,8 @@
 package com.demo.one2one.bi;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.BatchSize;
+
 @Entity
 @Table(name = "parking_table")
 public class Parking {
@@ -9,7 +11,9 @@ public class Parking {
 	private int partingId;
 	private String parkingLocation;
 
-	@OneToOne(mappedBy = "parking", cascade = CascadeType.ALL)
+//	@OneToOne(mappedBy = "parking", cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "parking", cascade =  CascadeType.ALL, fetch = FetchType.LAZY)
+	@BatchSize(size = 3)
 	private Employee employee;
 
 	public Parking(String parkingLocation) {

@@ -13,9 +13,13 @@ public class B_GetAll {
 
         EntityManagerFactory emf= Persistence.createEntityManagerFactory("jpasession");
         EntityManager em=emf.createEntityManager();
+        Employee employee = em.getReference(Employee.class,1);//Proxy design pattern
+
         //JPQL
-        List<Employee> employees=em.createQuery("select e from Employee e", Employee.class).getResultList();
-        employees.forEach(System.out::println);
+//        List<Employee> employees=em.createQuery("select e from Employee e", Employee.class).getResultList();
+//        employees.forEach(System.out::println);
+
+        System.out.println(employee.getName());
         em.close();
         emf.close();
 
