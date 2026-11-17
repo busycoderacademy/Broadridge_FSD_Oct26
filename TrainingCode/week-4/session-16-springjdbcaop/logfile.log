@@ -1,0 +1,10 @@
+INFO  | 2026-11-17 11:34:23 | [main] aspect.LoggingAspect (LoggingAspect.java:25) - time taken to execute getAccountById is 1 ms
+INFO  | 2026-11-17 11:35:26 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 1 ms
+INFO  | 2026-11-17 12:20:41 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 750 ms
+INFO  | 2026-11-17 12:24:01 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 14 ms
+INFO  | 2026-11-17 12:25:21 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 12 ms
+INFO  | 2026-11-17 12:25:43 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 667 ms
+INFO  | 2026-11-17 12:27:28 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 683 ms
+INFO  | 2026-11-17 12:41:25 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :getAccountById() 709 ms
+INFO  | 2026-11-17 12:42:23 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :transfer() 1184 ms
+INFO  | 2026-11-17 12:53:17 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken to execute  is :transfer() 86 ms

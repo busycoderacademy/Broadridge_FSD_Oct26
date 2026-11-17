@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+        <!--what i need to do here -->
+        <!--i need to tell spring how to create the  beas (object whose life cycle is maitance by spring frameowrk)
+        scope="singleton"/prototype
+        Bean wiring
+        autowire-candidate="false"
+        -->
+        <bean id="car" class="com.demo2.Car" autowire="byType" >
+        </bean>
+        <bean id="tyre1" class="com.demo2.CeatTyre" autowire-candidate="false"/>
+        <bean id="tyre2" class="com.demo2.MrfTyre"/>
+</beans>
