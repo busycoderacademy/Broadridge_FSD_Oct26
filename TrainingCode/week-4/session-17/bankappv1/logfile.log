@@ -1,0 +1,19 @@
+WARN  | 2026-11-18 10:42:27 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:599) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountService' defined in file [C:\Broadridge_FSD_Oct26\TrainingCode\week-4\session-17\bankappv1\target\classes\com\bankapp\service\AccountServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.bankapp.repo.AccountRepo' available: expected single matching bean but found 2: accountRepoFileImpl,accountRepoMapImpl
+INFO  | 2026-11-18 11:15:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
+INFO  | 2026-11-18 11:15:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
+INFO  | 2026-11-18 11:15:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 11:15:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of transfer()10 ms
+INFO  | 2026-11-18 11:37:11 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 11:37:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
+INFO  | 2026-11-18 11:37:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()2 ms
+INFO  | 2026-11-18 11:37:12 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of transfer()716 ms
+INFO  | 2026-11-18 11:49:49 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 11:49:49 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
+INFO  | 2026-11-18 11:49:50 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 11:49:50 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of transfer()690 ms
+INFO  | 2026-11-18 11:52:13 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 12:13:46 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
+INFO  | 2026-11-18 12:46:26 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 12:47:52 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()1 ms
+INFO  | 2026-11-18 12:47:53 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
+INFO  | 2026-11-18 12:47:53 | [main] aspect.LoggingAspect (LoggingAspect.java:26) - time taken for execution of sendNotification()0 ms
