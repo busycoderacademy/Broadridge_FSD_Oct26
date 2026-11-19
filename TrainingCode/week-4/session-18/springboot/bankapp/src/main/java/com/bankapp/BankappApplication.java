@@ -14,6 +14,8 @@ public class BankappApplication implements CommandLineRunner{
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
+
+
 	public static void main(String[] args) {
 		SpringApplication.run(BankappApplication.class, args);
 	}
