@@ -21,6 +21,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> findAll() {
+//        if(1==1)
+//            throw  new RuntimeException("some db ex");
         return productRepo.findAll();
     }
 

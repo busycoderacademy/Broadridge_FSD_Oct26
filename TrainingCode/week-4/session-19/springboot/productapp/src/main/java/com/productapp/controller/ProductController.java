@@ -2,9 +2,11 @@ package com.productapp.controller;
 
 import com.productapp.entities.Product;
 import com.productapp.service.ProductService;
+import jakarta.validation.Valid;
 import org.apache.catalina.LifecycleState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,7 +24,7 @@ public class ProductController {
     }
     //ResponseEntity: bag aka collection that hold 2 things data + http status code
     //get all product rest api
-    @GetMapping(path = "products")
+    @GetMapping(path = "products", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<List<Product>> getAll(){
         return ResponseEntity
                 .status(HttpStatus.OK).body(productService.findAll());
@@ -35,14 +37,14 @@ public class ProductController {
 
     //add product
     @PostMapping(path = "products")
-    public ResponseEntity<Product> addProduct(@RequestBody Product product){
+    public ResponseEntity<Product> addProduct( @RequestBody @Valid Product product){
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(productService.addProduct(product));
     }
 
     //update product
     @PutMapping(path = "products/{id}")
-    public ResponseEntity<Product> updateProduct(@RequestBody Product product, @PathVariable int id){
+    public ResponseEntity<Product> updateProduct(@RequestBody @Valid Product product, @PathVariable int id){
         return ResponseEntity.status(HttpStatus.OK).body(productService.updateProduct(id, product));
     }
 

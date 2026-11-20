@@ -1,0 +1,855 @@
+SQL with mysql
+==============
+	=> creating database and table
+	=> CURD operations
+	=> basic SQL quaries Keywords: select, from,where, groupby, having
+	=> Joins
+
+
+
+SQL Quaries:	DML, DDL, Control quaries
+
+MySQL command 
+------------------
+creating database:		CREATE DATABASE IF NOT EXISTS Employee;
+
+shows all databases:		show databases;
+
+
+listing all tables in database:	SHOW TABLES;
+
+creating tables
+-------------------
+
+create table emp
+(
+    eid int not null auto_increment primary key,
+    ename varchar(20) not null,
+    city varchar(15),
+    designation varchar(20),	
+    salary int
+);
+
+
+CRUD operation
+==============
+
+CRUD:
+-------
+use rajdb;
+
+
+ALTER TABLE:		
+			ALTER TABLE Emp RENAME TO employe;
+
+			ALTER TABLE Emp ADD Age numeric(3);
+
+			ALTER TABLE Emp MODIFY Ename VARCHAR(22) NOT NULL;
+
+			ALTER TABLE Emp DROP COLUMN Age;
+
+
+
+Drop the table:		DROP TABLE IF EXISTS employee;
+
+
+changing the column name:
+
+	alter table nameOfthetable change oldColumnName newColumnName varchar (10) ;
+
+
+
+CURD Operations:
+-----------------
+
+
+INSERT Statement
+----------------
+	INSERT INTO emp(ename,city,designation,salary) VALUES('Raj','delhi','trainer',20000);
+
+
+UPDATE Statement
+----------------------
+	UPDATE emp SET Salary = Salary*1.03 WHERE Perks > 800;
+
+
+DELETE Statement
+------------------
+	DELETE FROM Emp WHERE Salary<10000;
+
+
+
+REPLACE Statement vs insert
+-----------------------------
+	REPLACE Statement works exactly same as the INSERT Statement, 
+	except only then if an old record in the table has the same 
+	value as in new row for a PRIMARY KEY or UNIQUE index then old 
+	row is deleted and new row is inserted. 
+
+	REPLACE INTO Emp VALUES(6,'Amar','Chennai','Developer',16000,1124);
+
+
+TRUNCATE Statement 
+--------------------
+	TRUNCATE Statement is also used to empty 
+	the table completely. 
+
+	TRUNCATE Emp1;
+
+
+
+
+basic quaries with SQL
+====================
+SELECT 
+FROM
+WHERE
+
+GROUP BY
+HAVING
+ORDER BY
+LIMIT
+
+
+
+SELECT * FROM Emp;
+
+
+
+SELECT Eid, Ename, Salary FROM Emp;
+
+where clause operators
+-----------------------
+ =
+<> or !=
+<
+< = 
+> 
+> = 
+Like 
+Between 
+IN 
+NOT IN 
+
+
+> SELECT * FROM Emp WHERE Ename LIKE 'C______';
+
+
+SELECT * FROM Emp WHERE Salary BETWEEN 8000 AND 10000;
+
+SELECT * FROM Emp WHERE Designation IN ('Manager','Designer');
+
+SELECT * FROM Emp WHERE Designation NOT IN ('Manager','Designer');
+
+
+
+Group by
+-------------
+SELECT * FROM Emp GROUP BY Ename;
+
+
+constraints
+------------
+Unique
+PK
+FK
+Check constraints: mySql do not support it directly...we have to write trigger fro it   :(
+
+
+
+
+creating master table and child table relationship
+=====================================================
+engine=InnoDB?
+mysql is a very flexibale (oracle=> community , lic)
+
+
+create table dept
+(
+	did int not null auto_increment,
+	dname char(10)not null,
+	primary key(did)
+);
+
+create table employee
+(
+        eid int not null auto_increment,
+	ename char(10) not null,
+	did int not null,
+	primary key(eid),
+	foreign key(did) references dept(did) 
+	on delete cascade on update cascade
+);
+
+
+engine=InnoDB
+
+
+
+
+Aggregate Function
+--------------------
+=>	AVG( );
+=>	COUNT( );
+=>	MAX( );
+=>	MIN( );
+=>	SUM( );
+
+
+
+
+The HAVING Clause
+-----------------------
+SELECT * 
+FROM Emp 
+GROUP BY Salary 
+HAVING AVG(Perks)>900;
+
+
+
+The ORDER BY Clause
+===========================
+     
+The ORDER BY clause can be used to set 
+the order of the retrieved records. 
+
+
+
+SELECT * FROM Emp ORDER BY Eid DESC;
+
+
+
+The LIMIT Clause
+==========================
+The LIMIT clause can be used to limit 
+the number of records that have been returned 
+by the SELECT statement. 
+
+You can specify the start row, and number of records retrieved. 
+
+
+SELECT * FROM Emp LIMIT 0,2;
+
+
+
+
+Joins
+=====================
+Types of Joins :
+----------------
+=> Cross join, cartesian product
+
+=> Inner join/EQ join/ natural join
+
+=> non eq join
+
+=> outer join
+
+=> self join
+
+
+consider two tables
+===================
+create table dept
+(
+	did int not null auto_increment,
+	dname char(10)not null,
+	primary key(did)
+)engine=InnoDB;
+
+create table employee
+(
+        eid int not null auto_increment,
+	ename char(10) not null,
+	did int not null,
+	primary key(eid),
+	foreign key(did) references dept(did) 
+	on delete cascade on update cascade
+)engine=InnoDB;
+
+
+
+
+INNER Joins/Equi joins
+===========
+default Join type based on equality .......
+
+
+SELECT * FROM Client
+     INNER JOIN purchage
+     ON Client.C_ID=purchage.C_ID;
+
+
+SELECT * FROM dept1 d
+     INNER JOIN employee1 e
+     ON d.did=e.did_fk;
+
+
+	or
+	======
+
+select * from client, purchage
+where client.c_id=purchage.c_id;
+
+
+
+
+OUTER Joins 
+===========
+very useful to find database inconsistancies
+
+an OUTER Join returns the all rows that returned by an INNER Join plus all 
+the rows from one table that 
+did not match any row from the other table. 
+
+
+
+
+Outer Join are divided in two types : 
+========================================
+
+LEFT OUTER Join
+RIGHT OUTER Join 
+
+LEFT OUTER Join 
+=======================
+to return all the rows that returned by an 
+INNER Join plus all the rows from first 
+table that did not match with any row from the 
+second table but with the NULL values for each column
+ from second table
+
+
+SELECT * FROM dept
+LEFT OUTER JOIN employee
+ON dept.did=emp.did_fk;
+
+	
+
+RIGHT OUTER Join
+========================
+
+SELECT * FROM dept
+RIGHT OUTER JOIN employee
+ON dept.did=emp.did_fk;
+
+
+JDBC
+=======================
+	==> JDBC Introduction
+	==> Hello World 
+	==> JDBC Statements, Preparedstatement, ResultSet types
+	==>DAO DTO design pattern
+	==> CRUD Operations
+	==> Calling Stored Procedures
+	==> Getting resultset meta data
+	==> Auto key generation
+	==> Batch Processing
+	==> Transactions
+
+JDBC Hello World
+============
+
+mysql -u root -p
+
+	Create database employee_jdbc;
+	use  employee_jdbc;
+
+
+	create table employee(
+		employeeId int not null primary key auto_increment,
+		employeeName varchar(40) not null,
+		employeeSalary int not null
+	);
+
+	insert into employee(employeeId ,employeeName ,employeeSalary)  
+	values(121,'raja',23366.5);
+
+	insert into employee(employeeId ,employeeName ,employeeSalary )  
+	values(11,'amit',55366.5);
+
+
+
+
+	preparedStatement = con.prepareStatement
+		(insert into employee(employeeId ,employeeName ,employeeSalary)  values(?,?,?));
+
+	
+	Connection properties
+	---------------------
+	"jdbc:mysql://127.0.0.1:3306/employee_jdbc","root","root"
+
+	Reading all records
+	----------------------
+
+			Connection con=DriverManager.getConnection
+			("jdbc:mysql://127.0.0.1:3306/employee_jdbc","root","root");
+			stmt=con.createStatement();
+			rs=stmt.executeQuery("select * from employee");
+			while(rs.next()){
+				System.out.print(rs.getInt("employeeId")+" ");
+				System.out.print(rs.getString("employeeName")+" ");
+				System.out.println(rs.getDouble("employeeSalary"));
+				
+		        }
+
+
+ 
+
+
+	Type of statement:
+	================
+
+	Statement==>used to create conneciton object
+
+	PreparedStatement==>
+	used to execute precompiled  SQL statementand retrive data into RS
+	=> faster
+	=> safer from sql injection
+
+	CallableStatement==>used for calling stored procedure
+
+
+	executeQuery()		 vs		 executeUpdate();
+	-----------------------------------------------------------
+	retrun type is RS		return type is int
+	give u rs			give u no of rows effected
+	for gettting data		for updating/deleting/adding data
+
+	
+Doing CRUD		
+===========
+
+	Step 1: Create DTO
+
+	public class Employee {
+		private int employeeId;
+		private String employeeName;
+		private double employeeSalary;
+
+
+
+	Step 2: Create DAO interface ( Design to interface )
+
+
+
+	public interface EmployeeDao {
+		public List<Employee>getAllEmployee();
+		public void addEmployee(Employee employee);
+		public void deleteEmployee(int employeeId);
+		public void updateEmployee(Employee employee);
+		public Employee getEmployeeById(int employeeId);
+	}
+
+
+
+
+
+	Provide implementation
+	=======================
+
+	public class EmployeeDaoImp implements EmployeeDao {
+
+		Connection con;
+
+		public EmployeeDaoImp(Connection con) {
+			this.con = con;
+		}
+		//.......
+		//......
+ 	}
+
+
+	Reading all records
+	-------------------
+
+
+			Connection con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/employee_jdbc","root","root");
+			stmt=con.createStatement();
+			rs=stmt.executeQuery("select * from employee");
+			while(rs.next()){
+				System.out.print(rs.getInt("employeeId")+" ");
+				System.out.print(rs.getString("employeeName")+" ");
+				System.out.println(rs.getDouble("employeeSalary"));
+				
+		        }
+
+
+
+
+
+
+
+	Adding record
+	-------------
+
+			con=DriverManager.getConnection
+		("jdbc:mysql://127.0.0.1:3306/employee_jdbc","root","root");
+			stmt=con.prepareStatement
+			("insert into employee(employeeId ,employeeName ,employeeSalary) values(?,?,?))");
+			stmt.setInt(1, 2);
+			stmt.setString(2, "rajiv");
+			stmt.setDouble(3, 3333.6);
+			stmt.executeUpdate();
+
+
+	Update record
+	---------------
+			con=DriverManager.getConnection
+			("jdbc:mysql://127.0.0.1:3306/employee_jdbc","root","root");
+			stmt=con.prepareStatement
+			("update employee set employeeName=? ,employeeSalary=? where employeeId=?");
+		
+			stmt.setString(1, "rajiv again");
+			stmt.setDouble(2, 3333.6);
+			stmt.setInt(4, 2);
+			stmt.executeUpdate();
+			
+
+	Delete record
+	--------------
+			stmt=con.prepareStatement("delete from employee where employeeId=?");
+			stmt.setInt(1, 2);
+			stmt.executeUpdate();
+
+
+
+	Get Employee as per id
+	----------------------- 
+			con=DriverManager.getConnection
+			("jdbc:mysql://127.0.0.1:3306/employee_jdbc","root","root");
+			stmt=con.prepareStatement("select * from employee where employeeId=?");
+
+			// 1 is position no of empId field 
+			stmt.setInt("employeeId", 11);
+			 rs=stmt.executeQuery();
+			
+			if(rs.next()){
+				System.out.println("employeeId:"+rs.getInt(1));
+			}
+
+
+
+
+	
+
+
+
+
+GPP practices:
+-------------
+
+reading configuration information from properties files:
+db.properties
+-------------------
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/UserDB
+user=root
+password=root
+
+Create an connection factory
+-------------------------
+	
+	public class ConnectionFactory {
+		private static Connection connection;
+	
+		public static Connection getConnection() {
+			// read the property file, and load into Properties object
+			InputStream is =ConnectionFactory
+					.class.getClassLoader()
+					.getResourceAsStream("db1.properties");
+			
+			Properties properties = new Properties();
+	
+			try {
+				properties.load(is);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+			String driver = properties.getProperty("jdbc.driver");
+			String url = properties.getProperty("jdbc.url");
+			String username = properties.getProperty("jdbc.username");
+			String password = properties.getProperty("jdbc.password");
+			
+			// load the driver
+			try {
+				Class.forName(driver);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			// create a connection and
+			try {
+				connection = DriverManager.getConnection(url, 
+						username, password);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			// return the connection
+			return connection;
+		}
+	}
+
+
+
+
+
+Difference bw execute() vs executeQuery() vs executeUpdate()
+-----------------------------------------------------------------
+		 executeQuery()
+		---------------
+			* Return resultset
+			* dont change state of database
+		executeUpdate()
+		-------------
+			* return no of row effected
+			* used for add/del/update operation
+		execute()
+		---------
+			* can be used for both operations
+			* return T/F: T if it return RS, false if do update operation to db
+			*should be used if query is taken at run time
+
+	Example:
+	----------
+	
+		Connection connection = ConnectionFactory.getConnection();
+
+		System.out.println("PE a query");
+		String query;
+		Scanner scanner = new Scanner(System.in);
+		query = scanner.nextLine();
+
+		System.out.println(query);
+		try {
+			PreparedStatement pstmt = connection.prepareStatement(query);
+			boolean val = pstmt.execute();
+			// if val is true that means it is select kind of query
+			if (val) {
+				ResultSet rs = pstmt.getResultSet();
+				while (rs.next()) {
+					System.out.println(rs.getInt(1) 
+							+ ":" +
+							rs.getString(2));
+				}
+			} else {
+				//pstmt.executeUpdate();//bad code
+				int count=pstmt.getUpdateCount();
+				System.out.println(count);
+			}
+			System.out.println(val);
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+
+
+
+
+
+What next?
+------------
+Basics of stored procedure
+calling store procedure, CallableStatement
+using resultsetmeta data
+using auto gen primary key
+Transaction concept
+
+
+
+
+Callable Statement
+=====================
+ 	==> For stored procedure
+	==> Hello World store procedure
+
+
+DELIMITER // 
+Create PROCEDURE AllEmployees()
+BEGIN
+Select * from employee;
+END
+// 
+DELIMITER ;
+
+
+
+delimiter // 
+create procedure addNum2(in num1 int, in num2 int ,out param1 int) 
+begin 
+set param1 := num1 + num2; 
+end 
+// 
+delimiter ;
+
+
+
+
+
+
+
+Check store procedure
+---------------------
+CALL test(3,6,@a);
+select @a; 
+
+Calling store procdure
+----------------------
+
+		con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/raj","root","root");
+		cstmt=con.prepareCall("call test(?,?,?)");
+		cstmt.setInt(1, 3);
+		cstmt.setInt(2, 44);
+		cstmt.registerOutParameter(3, Types.INTEGER);
+		cstmt.execute();
+		System.out.println("Result:"+cstmt.getInt(3));
+
+
+
+
+	
+Getting resultset meta data
+-------------------------
+
+			ResultSetMetaData rsMeta=rs.getMetaData();
+			System.out.println("No of column:"+rsMeta.getColumnCount());
+			
+			for(int i=1;i<=rsMeta.getColumnCount();i++){
+				System.out.println(rsMeta.getColumnClassName(i));
+			}
+
+
+	DatabaseMetaData dbmd=con.getMetaData();  
+  
+	System.out.println("Driver Name: "+dbmd.getDriverName());  
+	System.out.println("Driver Version: "+dbmd.getDriverVersion());  
+	System.out.println("UserName: "+dbmd.getUserName());  
+	System.out.println("Database Product Name: "+dbmd.getDatabaseProductName());  
+	System.out.println
+	("Database Product Version: "+dbmd.getDatabaseProductVersion());
+
+prints total number of tables :
+--------------------------
+	DatabaseMetaData dbmd=con.getMetaData();  
+	String table[]={"TABLE"};  
+	ResultSet rs=dbmd.getTables(null,null,null,table);  
+  
+	while(rs.next()){  
+		System.out.println(rs.getString(3));  
+	}  
+
+
+  
+Auto key generation
+-------------------
+Consider:
+
+create table customer
+(
+	customerId int not null primary key AUTO_INCREMENT,
+	customerName varchar(60) not null,
+	customerAddress varchar(80) not null
+);
+fetching autogenerated key:
+-----------------------------
+String sql = "INSERT INTO table (column1, column2) values(?, ?)";
+stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+
+stmt.executeUpdate();
+if(returnLastInsertId) {
+   ResultSet rs = stmt.getGeneratedKeys();
+    rs.next();
+   auto_id = rs.getInt(1);
+}
+
+
+
+Transations (ACID): 
+==================
+
+
+	Need of transaction:
+	-------------------
+
+	create table account(id int  primary key,balance int not null);
+	insert into account(id, balance) values(1,200);
+	insert into account(id, balance) values(2,200);
+
+
+
+	Connection connection = ConnectionFactory.getConnection();
+		try {
+			Statement stmt=connection.createStatement();
+			stmt.addBatch("update account set balance = balance - 100 where id=1");
+			
+			stmt.addBatch("update account set balance = balance + 100 were id=2");
+			stmt.executeBatch();
+			System.out.println("done ");
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+
+	A:Atomicity
+	C:Consistancy
+	I:Isolation
+	D:Durability
+
+		using code (programmatic approaching)  5%
+		    using annotation (declerative approach) 95%
+
+	Steps for making an transactions:
+	--------------------------------
+	1. connection.setAutoCommit(false);
+
+	2. If everything goes well then 
+			connection.commit();
+	3. If something goes wrong then
+			connection.rollback();
+
+	Connection connection = ConnectionFactory.getConnection();
+
+		try {
+			connection.setAutoCommit(false);
+			Statement stmt = connection.createStatement();
+			stmt.addBatch("update account set balance = balance - 100 where id=1");
+
+			stmt.addBatch("update account set balance = balance + 100 were id=2");
+			stmt.executeBatch();
+			connection.commit();
+			System.out.println("done ");
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+
+		} catch (Exception e) {
+			try {
+				connection.rollback();
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+
+
+
+
+fetching autogenerated key:
+-----------------------------
+String sql = "INSERT INTO table (column1, column2) values(?, ?)";
+stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+
+stmt.executeUpdate();
+if(returnLastInsertId) {
+   ResultSet rs = stmt.getGeneratedKeys();
+    rs.next();
+   auto_id = rs.getInt(1);
+}
+
+
+
+

@@ -1,0 +1,38 @@
+"2026-11-20 [main] INFO  c.productapp.ProductappApplication - Starting ProductappApplication using Java 21.0.10 with PID 25460 (C:\Broadridge_FSD_Oct26\TrainingCode\week-4\session-19\springboot\productapp\target\classes started by busyc in C:\Broadridge_FSD_Oct26\TrainingCode\week-4\session-19\springboot\productapp)
+""2026-11-20 [main] INFO  c.productapp.ProductappApplication - No active profile set, falling back to 1 default profile: "default"
+""2026-11-20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2026-11-20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+""2026-11-20 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+""2026-11-20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2026-11-20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.27]
+""2026-11-20 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2167 ms
+""2026-11-20 [main] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'webMvcObservationFilter' configured for use
+""2026-11-20 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+""2026-11-20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2026-11-20 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=FOO
+""2026-11-20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2026-11-20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2026-11-20 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+""2026-11-20 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2026-11-20 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+""2026-11-20 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2026-11-20 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2026-11-20 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""2026-11-20 [main] INFO  o.s.b.h.a.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+""2026-11-20 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+""2026-11-20 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/productapp'
+""2026-11-20 [main] INFO  c.productapp.ProductappApplication - Started ProductappApplication in 7.278 seconds (process running for 9.145)
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] INFO  o.a.c.c.C.[.[.[/productapp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1c5f6292
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7c74ef4a
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2026-11-20 [RMI TCP Connection(2)-192.168.1.42] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+""2026-11-20 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+""2026-11-20 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+""2026-11-20 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2026-11-20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2026-11-20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+"
