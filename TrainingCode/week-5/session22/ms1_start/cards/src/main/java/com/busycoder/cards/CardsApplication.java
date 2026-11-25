@@ -8,10 +8,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import java.time.LocalDate;
 import java.util.Random;
-
+@EnableDiscoveryClient
 @SpringBootApplication
 @EnableConfigurationProperties(InfoDto.class)
 public class CardsApplication implements CommandLineRunner {
