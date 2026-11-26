@@ -529,7 +529,7 @@ Step 3: Configure eureka server:
 -------------------------------
 create new project with: eureka server, actuator
 -----------------------------------------------
-<version>3.5.12</version>
+
 
 	<properties>
 		<java.version>21</java.version>
